@@ -11,18 +11,23 @@
     --fonte-destaque: "Jost", sans-serif;
 }
 
-
+/*Formatação geral*/
 
 body {  background-color: white;
         color: rgb(43, 41, 41);
         max-width: 1000px;
         margin: auto;}
-      
-header > img {  width: 5%;
-                padding-top: 30px;
-                padding-bottom: 20px;
-                padding-left: 20px;}
 
+        
+/*Formatação do header*/
+
+header > img {  width: 8%;
+                padding-top: 30px;
+                padding-bottom: 15px;
+                padding-left: 30px;}
+
+
+/*Formatação dos navegadores de topo*/
 
 nav {   padding: 6px;
         max-width: 600px;
@@ -39,23 +44,12 @@ nav > a {   text-decoration: none;
 
 nav .nav01 {    padding: 0px;
                 margin: 0px;
-                margin-left: 20px;}
+                margin-left: 30px;}
 
 nav .nav02 {    padding: 0px;
                 margin: 0px;
                 margin-left: 8px;}
 
-nav .nav03 {    padding: 0px;
-                margin: 0px;
-                margin-left: 8px;}
-
-nav .nav04 {    padding: 0px;
-                margin: 0px;
-                margin-left: 8px;}
-
-nav .nav05 {    padding: 0px;
-                margin: 0px;
-                margin-left: 8px;}
 
 nav a:hover {   color: teal;
                 transition-duration: 0.5s;
@@ -63,58 +57,60 @@ nav a:hover {   color: teal;
 
 
 
-main {  color: rgb(41, 41, 43);
-        max-width: 1000px;
-        min-width: 280px;
-        padding-left: 0px;
-        padding right: 40px;}
+/*Formatação do parágrafo 01 da página inicial*/
 
-main .p01 { color: rgb(41, 41, 43);
+main .p01 { max-width: 100%;
+            color: rgb(41, 41, 43);
             font-family: var(--fonte-padrao);
-            font-size: 1.2em;
-            font-weight: 600;
+            font-size: 1em;
+            font-weight: 0;
             line-height: 1em;
             margin-left: 10px;
-            padding-bottom: 0px;
-            padding-top: 40px;
-            margin-bottom: 0px;
-            text-align: right;}
+            padding: 40px 0px 0px 0px;
+            margin-bottom: 10px;
+            text-align: right;
+            white-space: nowrap;}
 
 
-main .p02 { color: rgb(41, 41, 43);
+ /*Formatação do parágrafo 02 da página inicial*/
+
+main .p02 { max-width: 100%;
+            color: rgb(41, 41, 43);
             font-family: var(--fonte-padrao);
             font-size: 1.2em;
-            font-weight: 600;
+            font-weight: bold;
             line-height: 1.6em;
-            margin-left: 50px;
-            margin-top: 0px;
+            margin: 0px 20px 0px 50px;
             padding-top: 0px;
-            text-align: right;}
+            text-align: right;
+            white-space: nowrap;}
 
- .container{
-    max-width:1200px;
-    margin:auto;
-    padding:20px;
-}       
+/*Formatação geral - tag em main logo na primeira página*/
 
+.container{ max-width:1200px;
+            margin:auto;
+            padding:10px;}
+    
 
-main h1 {   font-family: var(--fonte-padrao);
+/*Formatação do título História da g Engenharia*/            
+main h1 {   max-width: 100%;
+            font-family: var(--fonte-padrao);
             font-size: 25px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin-left: 50px;
-            margin-top: 50px;
-            padding: 10px;}
+            margin-left: 30px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            background-color: white;
+            color: black;}
+
+
 
 main p {font-family: var(--fonte-padrao);
         max-width: 100%;
-        margin-left: 65px;
+        margin-left: 30px;
         text-align: justify;
         padding-top: 20px;
-        margin-right: 60px;
+        margin-right: 20px;
         line-height: 1.8;}
-
-
 
 main a {    text-decoration: none;
             color: black;}
@@ -122,27 +118,26 @@ main a {    text-decoration: none;
 main a:hover {color: teal}
 
 
-
-aside h1 {  font-family: var(--fonte-padrao);
+aside h1 {  max-width: 100%;
+            font-family: var(--fonte-padrao);
             font-size: 25px;
-            padding-top: 20px;
             padding-bottom: 20px;
-            margin-left: 50px;
-            margin-top: 50px;
-            padding: 10px;}
+            margin-left: 30px;
+            padding-top: 30px;}
 
-aside h2 {  font-family: var(--fonte-padrao);
+aside h2 {  max-width: 100%;
+            font-family: var(--fonte-padrao);
             font-size: 19px;
             padding-top: 20px;
             padding-bottom: 20px;
-            margin-left: 50px;
+            margin-left: 20px;
             margin-top: 50px;
             padding: 10px;}
 
-div.aside02 {  font-family: var(--fonte-padrao);
+div.aside02 {   font-family: var(--fonte-padrao);
                 background-color: rgba(72, 100, 100, 0.712);
                 margin: auto;
-                border-radius: 0px;
+                border-radius: 10px;
                 padding: 0px 0px 0px 0px;
                 box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.555);
                 max-width: 100%;}
@@ -169,7 +164,7 @@ div.aside02 ul {   color: white;
 
 main .img01 {   max-width: 90%;
                 padding-left: 20px;
-                margin: 0 0px 0 20px;
+                margin: 30px 0px 20px 20px;
                 box-sizing: border-box;}
            
 
@@ -254,18 +249,59 @@ aside .img09 {max-width: 90%;
     right:15px;
 }
 
+/*CSS - Entrar em contato */
+
+.icones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap; /* nunca quebra */}
+
+.item {
+  flex: 1 1 0; /* cresce e diminui igualmente */
+  min-width: 0; /* evita estourar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;}
+
+.item:hover {
+  transform: translateY(-5px) scale(1.05);}
+
+.item img {
+  width: clamp(35px, 5vw, 60px);
+  margin: 20px 0;
+}
+
+.item h2 {
+  font-family: var(--fonte-padrao);
+  font-size: clamp(0.8em, 1.2vw, 1.4em);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.item h3 {
+  font-family: var(--fonte-padrao);
+  font-size: clamp(0.7em, 1vw, 1em);
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.item h4 {
+  font-family: var(--fonte-padrao);
+  font-size: clamp(0.8em, 1.1vw, 1.1em);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+
 /*Rodapé*/
 
 footer {font-family: var(--fonte-padrao);
         text-align: center;
         color: rgb(95, 93, 93);;
-        padding: 10px 10px 10px 10px;
+        padding: 10px 10px 50px 10px;
 }
-
-footer .p02 {padding-top: 10px;
-            line-height:28px;
-            font-style: italic;
-            font-size: 0.8em;}
-
 
 
