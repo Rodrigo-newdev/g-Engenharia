@@ -2,306 +2,543 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {margin: 0px;
-    padding: 0px;}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
 
+/* VARIÁVEIS */
 :root {
-
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: "Jost", sans-serif;
 }
 
-/*Formatação geral*/
+/* =========================
+   FORMATAÇÃO GERAL
+========================= */
+body {
+    background-color: white;
+    color: rgb(43, 41, 41);
+    max-width: 1000px;
+    margin: auto;
+}
 
-body {  background-color: white;
-        color: rgb(43, 41, 41);
-        max-width: 1000px;
-        margin: auto;}
+/* =========================
+   HEADER
+========================= */
+header > img {
+    width: 8%;
+    padding: 30px 0 15px 30px;
+}
 
-        
-/*Formatação do header*/
+.cabeçalho {
+    background-color: gray;
+    color: white;
+}
 
-header > img {  width: 8%;
-                padding-top: 30px;
-                padding-bottom: 15px;
-                padding-left: 30px;}
+/* =========================
+   NAVEGAÇÃO
+========================= */
+nav {
+    padding: 6px;
+    max-width: 600px;
+    min-width: 280px;
+}
 
+nav > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 0.9em;
+    font-family: var(--fonte-padrao);
+}
 
-/*Formatação dos navegadores de topo*/
+nav .nav01 {
+    margin-left: 30px;
+}
 
-nav {   padding: 6px;
-        max-width: 600px;
-        min-width: 280px;
-        
-        /*background-image: linear-gradient(to right, grey, transparent);
-        border-radius: 5px;*/}
+nav .nav02 {
+    margin-left: 8px;
+}
 
-nav > a {   text-decoration: none;
-            color: rgb(0, 0, 0);
-            margin-left: 20px;
-            font-size: 1em;
-            font-family: var(--fonte-padrao);}
+nav a:hover {
+    color: teal;
+    font-weight: bold;
+    transition: 0.5s;
+}
 
-nav .nav01 {    padding: 0px;
-                margin: 0px;
-                margin-left: 30px;}
+/* =========================
+   MAIN - TEXTOS INICIAIS
+========================= */
+main .p01 {
+    max-width: 100%;
+    color: rgb(41, 41, 43);
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    line-height: 1em;
+    margin: 40px 0 10px 10px;
+    text-align: right;
+    white-space: nowrap;
+}
 
-nav .nav02 {    padding: 0px;
-                margin: 0px;
-                margin-left: 8px;}
+main .p02 {
+    max-width: 100%;
+    color: rgb(41, 41, 43);
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin: 0 20px 0 50px;
+    text-align: right;
+    white-space: nowrap;
+}
 
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
 
-nav a:hover {   color: teal;
-                transition-duration: 0.5s;
-                font-weight: bold;}
+/* =========================
+   TÍTULOS E TEXTOS
+========================= */
+main h1 {
+    max-width: 100%;
+    font-family: var(--fonte-padrao);
+    font-size: 25px;
+    margin-left: 30px;
+    padding: 30px 0 50px;
+    background-color: white;
+    color: black;
+}
 
+main p {
+    font-family: var(--fonte-padrao);
+    max-width: 100%;
+    margin: 20px 20px 0 30px;
+    text-align: justify;
+    line-height: 1.8;
+}
 
+main a {
+    text-decoration: none;
+    color: black;
+}
 
-/*Formatação do parágrafo 01 da página inicial*/
+main a:hover {
+    color: teal;
+}
 
-main .p01 { max-width: 100%;
-            color: rgb(41, 41, 43);
-            font-family: var(--fonte-padrao);
-            font-size: 1em;
-            font-weight: 0;
-            line-height: 1em;
-            margin-left: 10px;
-            padding: 40px 0px 0px 0px;
-            margin-bottom: 10px;
-            text-align: right;
-            white-space: nowrap;}
+/* =========================
+   ASIDE
+========================= */
+aside h1 {
+    max-width: 100%;
+    font-family: var(--fonte-padrao);
+    font-size: 25px;
+    margin-left: 30px;
+    padding: 30px 0 20px;
+}
 
+aside h2 {
+    max-width: 100%;
+    font-family: var(--fonte-padrao);
+    font-size: 19px;
+    margin: 50px 0 0 20px;
+    padding: 10px;
+}
 
- /*Formatação do parágrafo 02 da página inicial*/
+div.aside02 {
+    font-family: var(--fonte-padrao);
+    background-color: rgba(72, 100, 100, 0.712);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.555);
+    max-width: 100%;
+}
 
-main .p02 { max-width: 100%;
-            color: rgb(41, 41, 43);
-            font-family: var(--fonte-padrao);
-            font-size: 1.2em;
-            font-weight: bold;
-            line-height: 1.6em;
-            margin: 0px 20px 0px 50px;
-            padding-top: 0px;
-            text-align: right;
-            white-space: nowrap;}
+div.aside02 h2 {
+    margin-left: 0;
+    padding: 20px 0 20px 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.062);
+}
 
-/*Formatação geral - tag em main logo na primeira página*/
+div.aside02 p {
+    margin-left: 30px;
+    color: white;
+}
 
-.container{ max-width:1200px;
-            margin:auto;
-            padding:10px;}
-    
+div.aside02 ul {
+    color: white;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 1;
+    padding: 20px 0 0 30px;
+    line-height: 3;
+    font-size: small;
+    margin: auto;
+}
 
-/*Formatação do título História da g Engenharia*/            
-main h1 {   max-width: 100%;
-            font-family: var(--fonte-padrao);
-            font-size: 25px;
-            margin-left: 30px;
-            padding-top: 30px;
-            padding-bottom: 50px;
-            background-color: white;
-            color: black;}
+/* =========================
+   IMAGENS
+========================= */
+main .img01 {
+    max-width: 90%;
+    margin: 30px 0 20px 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
 
+main .img02 {
+    max-width: 35%;
+    float: right;
+    margin-right: 20px;
+    padding: 30px 0 0 30px;
+}
 
+aside .img03 {
+    max-width: 90%;
+    margin-left: 20px;
+    padding-top: 20px;
+}
 
-main p {font-family: var(--fonte-padrao);
-        max-width: 100%;
-        margin-left: 30px;
-        text-align: justify;
-        padding-top: 20px;
-        margin-right: 20px;
-        line-height: 1.8;}
+aside .img04 {
+    max-width: 90%;
+    padding: 20px 0 0 40px;
+}
 
-main a {    text-decoration: none;
-            color: black;}
+aside .img05 {
+    max-width: 100%;
+}
 
-main a:hover {color: teal}
+aside .img06,
+aside .img08 {
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+}
 
+aside .img09 {
+    max-width: 90%;
+    margin-left: 40px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
 
-aside h1 {  max-width: 100%;
-            font-family: var(--fonte-padrao);
-            font-size: 25px;
-            padding-bottom: 20px;
-            margin-left: 30px;
-            padding-top: 30px;}
+aside .listaimg {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
 
-aside h2 {  max-width: 100%;
-            font-family: var(--fonte-padrao);
-            font-size: 19px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin-left: 20px;
-            margin-top: 50px;
-            padding: 10px;}
+aside .logoreceita {
+    max-width: 30%;
+    padding: 30px 20px 0 0;
+}
 
-div.aside02 {   font-family: var(--fonte-padrao);
-                background-color: rgba(72, 100, 100, 0.712);
-                margin: auto;
-                border-radius: 10px;
-                padding: 0px 0px 0px 0px;
-                box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.555);
-                max-width: 100%;}
-
-div.aside02 h2 { margin-left: 0px;
-                  padding: 20px 0px 20px 20px;
-                  color: white;
-                  background-color: rgba(0, 0, 0, 0.062);}
-
-div.aside02 p {         margin-left: 30px;
-                        color: white;}
-
-div.aside02 ul {   color: white;
-                list-style-position: inside;
-                list-style-type: '\2714\00A0\00A0';
-                columns: 1;
-                padding-top: 20px;
-                padding-left: 30px;
-                line-height: 3;
-                font-size: small;
-                margin: auto;}
-
-
-
-main .img01 {   max-width: 90%;
-                padding-left: 20px;
-                margin: 30px 0px 20px 20px;
-                box-sizing: border-box;}
-           
-
- main .img02 {  max-width: 35%;
-                float: right;
-                margin-right: 20px;
-                padding-left: 30px;
-                padding-top: 30px;}
-
-aside .img03 {  max-width: 90%;
-                height: auto;
-                padding-top: 20px;
-                margin-left: 20px;}
-
-aside .img04 {  padding-top: 20px;
-                padding-left: 40px;
-                max-width: 90%;}
-
-aside .img05 {  max-width: 100%;
-                height: auto;}
-
-aside .img06 {  width: 100%;
-                height: auto;
-                padding-top: 20px;
-                display: block;}
-
-aside .listaimg {display: flex;
-                align-items: flex-start;
-                gap: 10px;}
-
-aside .logoreceita {max-width: 30%;
-                padding-top: 30px;
-                padding-right: 20px;}
-
-        
-aside .img08 {  width: 100%;
-                height: auto;
-                padding-top: 20px;
-                display: block;}
-
-aside .img09 {max-width: 90%;
-                margin-left: 40px;
-                padding-top: 20px;
-                box-sizing: border-box;}
-
-/*CSS do carrossel do portfólio*/
-
-.carrossel{
+/* =========================
+   CARROSSEL
+========================= */
+.carrossel {
     position: relative;
     max-width: 1000px;
     margin: auto;
 }
 
-.carrossel img{
-    width:100%;
-    height:auto;
-    display:block;
+.carrossel img {
+    width: 100%;
+    display: block;
 }
 
-.seta{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    background: rgba(0,0,0,0.1);
-    color:white;
-    border:none;
-    font-size:30px;
-    padding:12px 16px;
-    cursor:pointer;
-    border-radius:50%;
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
-.seta:hover{
-    background: rgba(0,0,0,0.7);
+.seta:hover {
+    background: rgba(0, 0, 0, 0.7);
 }
 
-.esquerda{
-    left:15px;
+.esquerda {
+    left: 15px;
 }
 
-.direita{
-    right:15px;
+.direita {
+    right: 15px;
 }
 
-/*CSS - Entrar em contato */
-
+/* =========================
+   CONTATO
+========================= */
 .icones {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: nowrap; /* nunca quebra */}
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
 
 .item {
-  flex: 1 1 0; /* cresce e diminui igualmente */
-  min-width: 0; /* evita estourar */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.3s ease;}
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
 
 .item:hover {
-  transform: translateY(-5px) scale(1.05);}
+    transform: translateY(-5px) scale(1.05);
+}
 
 .item img {
-  width: clamp(35px, 5vw, 60px);
-  margin: 20px 0;
+    width: clamp(35px, 5vw, 60px);
+    margin: 20px 0;
 }
 
 .item h2 {
-  font-family: var(--fonte-padrao);
-  font-size: clamp(0.8em, 1.2vw, 1.4em);
-  font-weight: 500;
-  margin-bottom: 5px;
+    font-family: var(--fonte-padrao);
+    font-size: clamp(0.8em, 1.2vw, 1.4em);
+    font-weight: 500;
 }
 
 .item h3 {
-  font-family: var(--fonte-padrao);
-  font-size: clamp(0.7em, 1vw, 1em);
-  font-weight: 300;
-  margin-bottom: 5px;
+    font-family: var(--fonte-padrao);
+    font-size: clamp(0.7em, 1vw, 1em);
+    font-weight: 300;
 }
 
 .item h4 {
-  font-family: var(--fonte-padrao);
-  font-size: clamp(0.8em, 1.1vw, 1.1em);
-  font-weight: 600;
-  margin-bottom: 40px;
+    font-family: var(--fonte-padrao);
+    font-size: clamp(0.8em, 1.1vw, 1.1em);
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
-
-/*Rodapé*/
-
-footer {font-family: var(--fonte-padrao);
-        text-align: center;
-        color: rgb(95, 93, 93);;
-        padding: 10px 10px 50px 10px;
+/* =========================
+   FOOTER
+========================= */
+footer {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    color: rgb(95, 93, 93);
+    padding: 10px 10px 50px;
 }
 
+/* =========================
+   BLOG
+========================= */
+.tituloblog {
+    font-family: var(--fonte-padrao);
+    max-width: 100%;
+    margin: 20px 20px 0 30px;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.5em;
+}
 
+.blog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .blog {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h2 {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    font-weight: 500;
+    padding: 15px;
+    line-height: 1.4;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* =========================
+   CONTEÚDO DE ARTIGO 01
+========================= */
+
+/* ANIMAÇÃO DE ENTRADA */
+.artigo {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TÍTULOS */
+.artigo h2 {
+    margin: 40px 0 10px 30px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.artigo h3 {
+    margin: 25px 0 5px 30px;
+}
+
+/* BARRA LATERAL NOS H2 */
+.artigo h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 5px;
+    height: 70%;
+    background-color: teal;
+    border-radius: 3px;
+}
+
+/* LISTAS */
+.artigo ul,
+.artigo ol {
+    margin: 10px 20px 20px 50px;
+    line-height: 1.8;
+}
+
+.artigo li {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.artigo li:hover {
+    transform: translateX(5px);
+    color: teal;
+}
+
+/* TABELA ESTILO PROFISSIONAL */
+.tabela-multa {
+    width: calc(100% - 60px);
+    margin: 20px 30px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 0.95em;
+}
+
+.tabela-multa th {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-multa td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-multa tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.tabela-multa tr {
+    transition: background 0.3s ease;
+}
+
+.tabela-multa tr:hover {
+    background-color: rgba(0, 128, 128, 0.08);
+}
+
+/* CITAÇÃO */
+blockquote {
+    margin: 20px 30px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-left: 5px solid teal;
+    font-style: italic;
+}
+
+/* DESTAQUE */
+.destaque {
+    margin: 20px 30px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-left: 5px solid teal;
+    border-radius: 5px;
+}
+
+/* LINKS COM ANIMAÇÃO */
+.artigo a {
+    position: relative;
+}
+
+.artigo a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: teal;
+    transition: width 0.3s ease;
+}
+
+.artigo a:hover::after {
+    width: 100%;
+}
+
+/* PADRONIZAÇÃO DE FONTES */
+.artigo h2,
+.artigo h3,
+.artigo ul,
+.artigo ol,
+.artigo li {
+    font-family: var(--fonte-padrao);
+    color: rgb(43, 41, 41);
+}
