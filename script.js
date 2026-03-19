@@ -1,5 +1,3 @@
-/*java script para o carrossel*/
-
 let imagens = [
 "portfolio/trabalho01.png",
 "portfolio/trabalho02.png",
