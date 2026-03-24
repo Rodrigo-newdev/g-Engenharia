@@ -613,3 +613,182 @@ blockquote {
     font-family: var(--fonte-padrao);
     color: rgb(43, 41, 41);
 }
+
+
+/* =========================
+   CONTEÚDO DE ARTIGO 02
+========================= */
+
+/* =========================
+   ARTIGO - AJUSTE COMPLETO
+========================= */
+
+/* CONTAINER */
+.artigo {
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* TÍTULO PRINCIPAL */
+.artigo h1 {
+    font-family: var(--fonte-padrao);
+    font-size: 2em;
+    margin: 30px 30px 20px 30px;
+    color: rgb(33, 33, 33);
+    line-height: 1.3;
+}
+
+/* META (AUTOR E DATA) */
+.meta {
+    font-size: 0.9em;
+    color: gray;
+    margin: -10px 30px 20px 30px;
+}
+
+/* PARÁGRAFOS */
+.artigo p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.05em;
+    line-height: 1.9;
+    margin: 10px 30px 20px 30px;
+    color: rgb(43, 41, 41);
+}
+
+/* TÍTULOS */
+.artigo h2 {
+    margin: 50px 0 10px 30px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.artigo h3 {
+    margin: 30px 0 5px 30px;
+    font-weight: 600;
+}
+
+/* BARRA LATERAL */
+.artigo h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 5px;
+    height: 70%;
+    background-color: teal;
+    border-radius: 3px;
+}
+
+/* LISTAS */
+.artigo ul,
+.artigo ol {
+    margin: 10px 20px 20px 60px;
+    line-height: 1.8;
+}
+
+.artigo li {
+    margin-bottom: 6px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.artigo li:hover {
+    transform: translateX(5px);
+    color: teal;
+}
+
+/* TABELA */
+.tabela-multa {
+    width: calc(100% - 60px);
+    margin: 20px 30px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 1em;
+}
+
+.tabela-multa th {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-multa td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-multa tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.tabela-multa tr:hover {
+    background-color: rgba(0, 128, 128, 0.08);
+}
+
+/* DESTAQUE */
+.destaque {
+    margin: 20px 30px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-left: 5px solid teal;
+    border-radius: 5px;
+}
+
+/* LINKS */
+.artigo a {
+    position: relative;
+}
+
+.artigo a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: teal;
+    transition: width 0.3s ease;
+}
+
+.artigo a:hover::after {
+    width: 100%;
+}
+
+/* STRONG */
+.artigo strong {
+    color: teal;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .artigo {
+        padding: 0 10px;
+    }
+
+    .artigo h1 {
+        font-size: 1.6em;
+        margin: 20px;
+    }
+
+    .artigo h2,
+    .artigo h3 {
+        margin-left: 20px;
+    }
+
+    .artigo p {
+        margin: 10px 20px;
+        font-size: 1em;
+    }
+
+    .artigo ul,
+    .artigo ol {
+        margin-left: 40px;
+    }
+
+    .tabela-multa {
+        width: calc(100% - 40px);
+        margin: 20px;
+    }
+}

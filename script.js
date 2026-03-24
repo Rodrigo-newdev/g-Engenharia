@@ -30,3 +30,6 @@ function voltar(){
     }
     document.getElementById("imagemPortfolio").src = imagens[indice];
 }
+
+/*SEO para artigo 02 (post7)*/
+
