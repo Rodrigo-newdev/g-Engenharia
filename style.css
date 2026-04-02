@@ -58,6 +58,13 @@ header > img {
     font-weight: bold;
 }
 
+.home .p03 {
+    font-size: clamp(1.2em, 1vw, 1.2em);
+    opacity: 0.8;
+    font-style: italic;
+}
+
+
 /* IMAGEM COM EFEITO */
 .hero-img {
     width: 100%;
@@ -93,7 +100,8 @@ header > img {
     }
 
     .home .p01,
-    .home .p02 {
+    .home .p02,
+    .home .p03 {
         text-align: left;
         white-space: normal;
     }
