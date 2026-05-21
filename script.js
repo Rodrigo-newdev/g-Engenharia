@@ -11,6 +11,17 @@ let imagens = [
 "portfolio/trabalho10.png",
 "portfolio/trabalho11.png",
 "portfolio/trabalho12.png",
+"portfolio/trabalho13.png",
+"portfolio/trabalho14.png",
+"portfolio/trabalho15.png",
+"portfolio/trabalho16.png",
+"portfolio/trabalho17.png",
+"portfolio/trabalho18.png",
+"portfolio/trabalho19.png",
+"portfolio/trabalho20.png",
+"portfolio/trabalho21.png",
+"portfolio/trabalho22.png",
+"portfolio/trabalho23.png",
 ];
 
 let indice = 0;
