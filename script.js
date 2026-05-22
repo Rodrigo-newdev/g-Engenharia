@@ -1,46 +1,153 @@
-let imagens = [
-"portfolio/trabalho01.png",
-"portfolio/trabalho02.png",
-"portfolio/trabalho03.png",
-"portfolio/trabalho04.png",
-"portfolio/trabalho05.png",
-"portfolio/trabalho06.png",
-"portfolio/trabalho07.png",
-"portfolio/trabalho08.png",
-"portfolio/trabalho09.png",
-"portfolio/trabalho10.png",
-"portfolio/trabalho11.png",
-"portfolio/trabalho12.png",
-"portfolio/trabalho13.png",
-"portfolio/trabalho14.png",
-"portfolio/trabalho15.png",
-"portfolio/trabalho16.png",
-"portfolio/trabalho17.png",
-"portfolio/trabalho18.png",
-"portfolio/trabalho19.png",
-"portfolio/trabalho20.png",
-"portfolio/trabalho21.png",
-"portfolio/trabalho22.png",
-"portfolio/trabalho23.png",
+let portfolio = [
+
+{
+    imagem: "portfolio/trabalho01.png",
+    titulo: "Projetos Arquitetônicos"
+},
+
+{
+    imagem: "portfolio/trabalho02.png",
+    titulo: "Projetos Arquitetônicos"
+},
+
+{
+    imagem: "portfolio/trabalho03.png",
+    titulo: "Projetos Arquitetônicos"
+},
+
+{
+    imagem: "portfolio/trabalho04.png",
+    titulo: "Projetos Arquitetônicos"
+},
+
+{
+    imagem: "portfolio/trabalho05.png",
+    titulo: "Projetos Arquitetônicos"
+},
+
+{
+    imagem: "portfolio/trabalho06.png",
+    titulo: "Projetos Arquitetônicos"
+},
+
+{
+    imagem: "portfolio/trabalho07.png",
+    titulo: "Projetos Arquitetônicos"
+},
+
+{
+    imagem: "portfolio/trabalho08.png",
+    titulo: "Projetos Arquitetônicos"
+},
+
+{
+    imagem: "portfolio/trabalho09.png",
+    titulo: "Projetos Estruturais"
+},
+
+{
+    imagem: "portfolio/trabalho10.png",
+    titulo: "Projetos Estruturais"
+},
+
+{
+    imagem: "portfolio/trabalho11.png",
+    titulo: "Projetos Estruturais"
+},
+
+{
+    imagem: "portfolio/trabalho12.png",
+    titulo: "Projetos Estruturais"
+},
+
+{
+    imagem: "portfolio/trabalho13.png",
+    titulo: "Projetos Estruturais"
+},
+
+{
+    imagem: "portfolio/trabalho14.png",
+    titulo: "Projetos Estruturais"
+},
+
+{
+    imagem: "portfolio/trabalho15.png",
+    titulo: "Execução e Administração de Obras"
+},
+
+{
+    imagem: "portfolio/trabalho16.png",
+    titulo: "Execução e Administração de Obras"
+},
+
+{
+    imagem: "portfolio/trabalho17.png",
+    titulo: "Execução e Administração de Obras"
+},
+
+{
+    imagem: "portfolio/trabalho18.png",
+    titulo: "Execução e Administração de Obras"
+},
+
+{
+    imagem: "portfolio/trabalho19.png",
+    titulo: "Execução e Administração de Obras"
+},
+
+{
+    imagem: "portfolio/trabalho20.png",
+    titulo: "Execução e Administração de Obras"
+},
+
+{
+    imagem: "portfolio/trabalho21.png",
+    titulo: "Regularização de Imóveis"
+},
+
+{
+    imagem: "portfolio/trabalho22.png",
+    titulo: "Regularização de Imóveis"
+},
+
+{
+    imagem: "portfolio/trabalho23.png",
+    titulo: "Regularização de Imóveis"
+}
+
 ];
 
 let indice = 0;
 
+function atualizarPortfolio(){
+
+    document.getElementById("imagemPortfolio").src =
+    portfolio[indice].imagem;
+
+    document.getElementById("tituloPortfolio").innerText =
+    portfolio[indice].titulo;
+}
+
 function avancar(){
+
     indice++;
-    if(indice >= imagens.length){
+
+    if(indice >= portfolio.length){
+
         indice = 0;
     }
-    document.getElementById("imagemPortfolio").src = imagens[indice];
+
+    atualizarPortfolio();
 }
 
 function voltar(){
+
     indice--;
+
     if(indice < 0){
-        indice = imagens.length - 1;
+
+        indice = portfolio.length - 1;
     }
-    document.getElementById("imagemPortfolio").src = imagens[indice];
+
+    atualizarPortfolio();
 }
-
-
-

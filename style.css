@@ -208,6 +208,8 @@ main a:hover {
     color: teal;
 }
 
+
+
 /* =========================
    ASIDE
 ========================= */
@@ -337,6 +339,26 @@ aside .logoreceita {
     0 20px 60px rgba(0,0,0,0.20);
 
     background: #000;
+}
+
+#tituloPortfolio{
+
+
+    font-family: var(--fonte-padrao);
+
+    font-size: 24px;
+    
+    font-weight: 400;
+
+    color: #666;
+
+    margin-left: 30px;
+
+    margin-top: 10px;
+
+    margin-bottom: 35px;
+
+    
 }
 
 /* =========================
@@ -949,3 +971,4 @@ blockquote {
         margin: 20px;
     }
 }
+
